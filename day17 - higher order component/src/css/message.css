@@ -1,0 +1,15 @@
+div{
+    width: 200px;
+    height: 200px;
+    /*position: absolute;*/
+    background: white;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.h1Tag{
+    margin-right: 50px;
+}
