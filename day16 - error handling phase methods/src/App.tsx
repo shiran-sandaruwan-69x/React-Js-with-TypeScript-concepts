@@ -1,10 +1,21 @@
 import React from 'react';
-import PortalDemo from "./components/PortalDemo";
+import Hero from "./components/Hero";
+import ErrorBoundary from "./components/ErrorBoundary";
+
 
 function App() {
   return (
     <div className="App">
-      <PortalDemo/>
+        {/*development env wala react la kohomath error eka pennawa / production ekata dana koka mehema danne*/}
+      <ErrorBoundary>
+          <Hero heroName="batman"/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+          <Hero heroName="super man"/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+          <Hero heroName="joker"/>
+      </ErrorBoundary>
     </div>
   );
 }

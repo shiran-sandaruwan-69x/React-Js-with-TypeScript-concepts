@@ -1,10 +1,10 @@
 import React from 'react';
-import PortalDemo from "./components/PortalDemo";
+
 
 function App() {
   return (
     <div className="App">
-      <PortalDemo/>
+
     </div>
   );
 }
