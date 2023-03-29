@@ -16,4 +16,4 @@ class HigherOrder extends React.Component<MyProps,MyState> {
     }
 }
 
-export default withCounter(HigherOrder);
+export default withCounter(HigherOrder,3);

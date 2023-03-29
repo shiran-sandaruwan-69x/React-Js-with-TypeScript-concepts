@@ -4,7 +4,7 @@ interface MyProps{
 }
 interface MyState{count:number}
 
-const withCounter = (OriginalComponent:any) =>{
+const withCounter = (WrappedComponent:any,incrementNumber:number) =>{
     class WithCounterComp extends React.Component<MyProps, MyState>{
 
         constructor(props: Readonly<MyProps> | MyProps) {
@@ -17,14 +17,17 @@ const withCounter = (OriginalComponent:any) =>{
         incrementCount =()=>{
             // prevState eke thiyana value eka mehema ara gena ekata ekk ekathu karnn puluwan
             this.setState(prevState =>{
-                return {count:prevState.count +1}
+                return {count:prevState.count + incrementNumber}
             })
         }
 
         render() {
-            return <OriginalComponent
+            return <WrappedComponent
                 count={this.state.count}
                 incrementCount={this.incrementCount}
+                // mekena wenne app.js eken props wala deyak euwoth a tika meken copy karagena access share
+                // karanawa me component eka use wena hama ekakatama
+                {...this.props}
             />;
         }
     }

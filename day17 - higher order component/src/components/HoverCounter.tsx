@@ -14,4 +14,4 @@ class HoverCounter extends React.Component<MyProps,MyState> {
     }
 }
 
-export default withCounter(HoverCounter);
+export default withCounter(HoverCounter,10);
