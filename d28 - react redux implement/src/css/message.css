@@ -1,0 +1,26 @@
+div{
+    /*width: 400px;*/
+    /*height: 100%;*/
+
+    /*background: white;*/
+    /*z-index: 2;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*top: 0;*/
+    /*margin: auto;*/
+}
+/*.UserList{*/
+/*    margin-top: 153px;*/
+/*    margin-left: 200px;*/
+/*}*/
+
+/*.todoList{*/
+/*    margin-top: -200px;*/
+/*    margin-left: 800px;*/
+/*}*/
+
+.App{
+    display: flex;
+    justify-content: space-around;
+}
